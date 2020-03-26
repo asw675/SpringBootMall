@@ -117,4 +117,6 @@ public interface PmsProductMapper {
      * @mbggenerated Wed Mar 25 12:21:05 CST 2020
      */
     int updateByPrimaryKey(PmsProduct record);
+
+    List<PmsProduct> selectByCategoryId(Long categoryId);
 }
