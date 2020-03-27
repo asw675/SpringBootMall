@@ -19,4 +19,6 @@ public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint {
         response.getWriter().println(new Gson().toJson(CommonResult.unauthorized(authException.getMessage())));
         response.getWriter().flush();
     }
+
+
 }
